@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const db = require('./db'); // Import the database module
+const db = require('./db');
 
 const app = express();
 
-app.use(bodyParser.json()); // Parse JSON request bodies
+app.use(bodyParser.json()); 
 
 app.listen(3000, (err) => {
   if (err) {
@@ -102,4 +102,3 @@ app.put('/users/:userId', (req, res) => {
     }
   });
 });
-
